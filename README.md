@@ -1,36 +1,37 @@
 # PAKDD-20-JarKA
 Pytorch implemetation of PAKDD'20---"JarKA: Modeling Attribute Interactions for Cross-lingual Knowledge Alignment"
 
-
+## Whole Framework
 ![Model](./EALmodel.png)
 
-MUSE is a Python library for *multilingual word embeddings*, whose goal is to provide the community with:
-* state-of-the-art multilingual word embeddings ([fastText](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md) embeddings aligned in a common space)
-* large-scale high-quality bilingual dictionaries for training and evaluation
-
-We include two methods, one *supervised* that uses a bilingual dictionary or identical character strings, and one *unsupervised* that does not use any parallel data (see [Word Translation without Parallel Data](https://arxiv.org/pdf/1710.04087.pdf) for more details).
-
 ## Dependencies
-* Python 2/3 with [NumPy](http://www.numpy.org/)/[SciPy](https://www.scipy.org/)
-* [PyTorch](http://pytorch.org/)
-* [Faiss](https://github.com/facebookresearch/faiss) (recommended) for fast nearest neighbor search (CPU or GPU).
 
-MUSE is available on CPU or GPU, in Python 2 or 3. Faiss is *optional* for GPU users - though Faiss-GPU will greatly speed up nearest neighbor search - and *highly recommended* for CPU users. Faiss can be installed using "conda install faiss-cpu -c pytorch" or "conda install faiss-gpu -c pytorch".
+* Python 3.6
+* Pytorch "1.1.0"
+* CPU/GPU
 
-## Get evaluation datasets
-To download monolingual and cross-lingual word embeddings evaluation datasets:
-* Our 110 [bilingual dictionaries](https://github.com/facebookresearch/MUSE#ground-truth-bilingual-dictionaries)
-* 28 monolingual word similarity tasks for 6 languages, and the English word analogy task
-* Cross-lingual word similarity tasks from [SemEval2017](http://alt.qcri.org/semeval2017/task2/)
-* Sentence translation retrieval with [Europarl](http://www.statmt.org/europarl/) corpora
 
-You can simply run:
+## How to run
 
 ```bash
-cd data/
-wget https://dl.fbaipublicfiles.com/arrival/vectors.tar.gz
-wget https://dl.fbaipublicfiles.com/arrival/wordsim.tar.gz
-wget https://dl.fbaipublicfiles.com/arrival/dictionaries.tar.gz
+Comming soon...
 ```
 
-Alternatively, you can also download the data with:
+## Extensive Experiments
+
+# Dataset discription
+
+We evaluate the proposed model on three datasets. One is a well-adopted public dataset named DBP15K, the other two, named DBP15K-1 and DBP15K-2, modify DBP15K. DBP15K-1 loosens the constraint as 2 self-contained relationship triplets, and DBP15K-2 further removes the self-contained constraint. Thus, the clustering of the three datasets is different. Table 1 shows the statistics of the datasets.
+
+[...]
+
+# Overall experiment results
+
+[...]
+
+# Sensitivity to Graph Clustering
+We compare JarKA and BootEA on three ZH-EN datasets in Fig. 4(a), which shows that both of them perform poorer when the clustering coefficient (cc) of the dataset is smaller. But their performance gap increases with the decrease of cc, indicating BootEA is more sensitive to the clustering characteristics of the graph than JarKA, as BootEA only models the structures.
+
+[...]
+
+
