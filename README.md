@@ -27,7 +27,7 @@ We evaluate the proposed model on three datasets. One is a well-adopted public d
 
 ### Overall experiment results
 
-![overall](./overall.png)
+![overall](./overall_res.png)
 
 ### Sensitivity to Graph Clustering
 We compare JarKA and BootEA on three ZH-EN datasets, which shows that both of them perform poorer when the clustering coefficient (cc) of the dataset is smaller. But their performance gap increases with the decrease of cc, indicating BootEA is more sensitive to the clustering characteristics of the graph than JarKA, as BootEA only models the structures.
