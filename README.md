@@ -2,7 +2,7 @@
 Pytorch implemetation of PAKDD'20---"JarKA: Modeling Attribute Interactions for Cross-lingual Knowledge Alignment"
 
 ## Whole Framework
-<div align=center><img width="150" height="150" src="./model.png"/></div>
+<div align=center><img width="300" height="300" src="./model.png"/></div>
 
 ## Dependencies
 
