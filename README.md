@@ -1,5 +1,7 @@
 # PAKDD-20-JarKA
 Pytorch implemetation of PAKDD'20---"JarKA: Modeling Attribute Interactions for Cross-lingual Knowledge Alignment"
+
+
 ![Model](./EALmodel.png)
 
 MUSE is a Python library for *multilingual word embeddings*, whose goal is to provide the community with:
