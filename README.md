@@ -24,15 +24,15 @@ Comming soon...
 We evaluate the proposed model on three datasets. One is a well-adopted public dataset named DBP15K, the other two, named DBP15K-1 and DBP15K-2, modify DBP15K. DBP15K-1 loosens the constraint as 2 self-contained relationship triplets, and DBP15K-2 further removes the self-contained constraint. Thus, the clustering of the three datasets is different. Table 1 shows the statistics of the datasets.
 
 
-<div align=center><img width="500" height="500" src="./data.png"/></div>
+<div align=center><img height="500" src="./data.png"/></div>
 
 ### Overall experiment results
 
-<div align=center><img width="500" height="500" src="./overall_res.png"/></div>
+<div align=center><img height="500" src="./overall_res.png"/></div>
 
 ### Sensitivity to Graph Clustering
 We compare JarKA and BootEA on three ZH-EN datasets, which shows that both of them perform poorer when the clustering coefficient (cc) of the dataset is smaller. But their performance gap increases with the decrease of cc, indicating BootEA is more sensitive to the clustering characteristics of the graph than JarKA, as BootEA only models the structures.
 
-<div align=center><img width="500" height="500" src="./cc.png"/></div>
+<div align=center><img width="400" height="400" src="./cc.png"/></div>
 
 
