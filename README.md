@@ -24,7 +24,7 @@ Comming soon...
 We evaluate the proposed model on three datasets. One is a well-adopted public dataset named DBP15K, the other two, named DBP15K-1 and DBP15K-2, modify DBP15K. DBP15K-1 loosens the constraint as 2 self-contained relationship triplets, and DBP15K-2 further removes the self-contained constraint. Thus, the clustering of the three datasets is different. Table 1 shows the statistics of the datasets.
 
 
-<div align=center><img height="400" src="./data.png"/></div>
+<div align=center><img height="200" src="./data.png"/></div>
 
 ### Overall experiment results
 
