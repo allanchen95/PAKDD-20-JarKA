@@ -5,7 +5,7 @@
 
 ## Whole Framework
 
-<img src="./model.png" alt="shot" style="zoom:65%;" />
+<div align=center><img width="40%" height="40%" src="./model.png"/></div>
 
 ## Dependencies
 
@@ -24,6 +24,8 @@
 + Directoty *model*: saves JarKA code. 
 
 Taking, *zh_en* dataset, for example, we demostrate how to run JarKA model:
+
+
 
 
 
@@ -66,15 +68,11 @@ We evaluate the proposed model on three datasets. One is a well-adopted public d
 
 The *dbp15k-1* dataset is also avaliable [online](https://pan.baidu.com/s/1wdGV49pscjYcluEXO14o_g).(password: aclg) 
 
-<img src="./data.png" alt="shot" style="zoom:50%;" />
-
-
+<div align=center><img width="50%" height="50%" src="./data.png"/></div>
 
 ### Overall experiment results
 
-<img src="./overall_res.png" alt="shot" style="zoom:65%;" />
-
-
+<div align=center><img width=80% height=80%" src="./overall_res.png"/></div>
 
 
 
@@ -82,9 +80,7 @@ The *dbp15k-1* dataset is also avaliable [online](https://pan.baidu.com/s/1wdGV4
 
 We compare JarKA and BootEA on three ZH-EN datasets, which shows that both of them perform poorer when the clustering coefficient (cc) of the dataset is smaller. But their performance gap increases with the decrease of cc, indicating BootEA is more sensitive to the clustering characteristics of the graph than JarKA, as BootEA only models the structures.
 
-<img src="./cc.png" alt="shot" style="zoom:20%;" />
-
-
+<div align=center><img width="30%" height="30%" src="./cc.png"/></div>
 
 
 
@@ -102,5 +98,3 @@ If you think JarKA inspires you, please cite it as follows:
   organization={Springer}
 }
 ```
-
-
