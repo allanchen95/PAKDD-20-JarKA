@@ -31,7 +31,7 @@ Taking, *zh_en* dataset, for example, we demostrate how to run JarKA model:
 
 ### 1. Preprocess the data
 
-+ Go to the dirs, *./dbp15k/zh_en/*,  then, run the following code sequentially to generate essential data files: 
++ You need first download *dbp15k* dataset, and then go to the dirs *./dbp15k/zh_en/*,  run the following code sequentially to generate essential data files: 
   + *build_vocab_dict.py*:  to build vocabulary dict (*whole_vocab_split*) and the corpus for pretraining the NMT (*zh_en_des*);
   + *filter_att.py*: to filter the popular attributes which appear at least 50 times in all attribute triplets, and then match each attribute to an id. (*att2id_fre.p*);
   + *generate_popular_attrs.py*: filter and sort the attributes by popularity and seclect top-20 attribute triplets for each entity (*filter_sort_zh/en_lan_att_filter.p*)   
@@ -40,7 +40,7 @@ Taking, *zh_en* dataset, for example, we demostrate how to run JarKA model:
 
 ### 2. Pretrain the NMT model.
 
-Go the dirs *model/ *
+Go the dirs *model/*
 
 +  Copy all the files in the dir *./dbp15k/zh_en/* to  *./data/*
 
