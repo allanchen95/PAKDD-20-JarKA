@@ -266,10 +266,13 @@ for epoch_num in range(5):
     str_tmp_dict = find_potential_alignment(str_model, test_threshold)
     aligned_rel_pairs = find_potential_relations(str_model, id2_rel1, id2_rel2, aligned_rel_pairs)
     # exit()
-    if args.merge_strategy == 'score_based':
+    if args.merge_strategy == 'score_based' or args.merge_strategy == "multi_view":
         aligned_test_pairs, final_dict = merge_seed(counter_dict, str_tmp_dict, att_tmp_dict, aligned_test_pairs, strategy="score_based")
-    if args.merge_strategy == 'rank_based' or args.merge_strategy == "multi_view":
+    elif args.merge_strategy == 'rank_based':
         aligned_test_pairs, final_dict = merge_seed(counter_dict, str_tmp_dict, att_tmp_dict, aligned_test_pairs, strategy="rank_based")
+    else:
+        print("No such strategy")
+        exit()
     delete_aligned_ents(str_model, final_dict)
     print("before merge: {} / {}".format(len(test_zh_true_set), len(test_en_true_set)))
     test_zh_true_set = list(set(str_model.test_index1) & set(test_zh_true_set))
