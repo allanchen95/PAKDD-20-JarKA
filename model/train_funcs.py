@@ -227,20 +227,20 @@ def read_dataset(folder):
     # test_ent_pairs = read_ref(folder + 'ref_pairs_for_mtranse_zh')
     # print("test align pairs: ",len(test_ent_pairs))
 
-    # ref_len = len(ref_ent_pairs)
+    ref_len = len(ref_ent_pairs)
 
-    # ref_ent_pairs_list = list(ref_ent_pairs)
+    ref_ent_pairs_list = list(ref_ent_pairs)
 
-    # val_index = random.sample(range(ref_len), 1000)
+    val_index = random.sample(range(ref_len), 1000)
 
     # # val_index = range(1000)
 
 
-    # val_ent_pairs_list = [ref_ent_pairs_list[i] for i in val_index]
+    val_ent_pairs_list = [ref_ent_pairs_list[i] for i in val_index]
 
-    # print("val_pairs: ",len(val_ent_pairs_list))
+    print("val_pairs: ",len(val_ent_pairs_list))
 
-    # val_ent_pairs = set(val_ent_pairs_list)
+    val_ent_pairs = set(val_ent_pairs_list)
 
     # with open('dbp_15k_1_zh_val.pkl', 'wb') as files:
     #     pickle.dump(val_ent_pairs, files)
@@ -252,9 +252,9 @@ def read_dataset(folder):
 
     # test_ent_pairs = set(test_ent_pairs_list)
 
-    with open(folder + 'dbp_15k_1_zh_val.pkl', 'rb') as files:
-        val_ent_pairs = pickle.load(files)
-    print("val_pairs: ",len(val_ent_pairs))
+    # with open(folder + 'dbp_15k_1_zh_val.pkl', 'rb') as files:
+    #     val_ent_pairs = pickle.load(files)
+    # print("val_pairs: ",len(val_ent_pairs))
     test_ent_pairs = ref_ent_pairs - val_ent_pairs
 
     print("test_pairs: ",len(test_ent_pairs))
